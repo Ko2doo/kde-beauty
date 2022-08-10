@@ -12,9 +12,9 @@
 [Официальный репозиторий](https://github.com/KDE/latte-dock)
 
 *Прежде чем устанавливать первым способом, вам необходимо поставить необходимые зависимости:*
-- first step:
+##### first step:
 `sudo pacman -Syu`
-- next step:
+##### next step:
 `sudo pacman -S cmake extra-cmake-modules python plasma-framework plasma-desktop plasma-wayland-protocols`
 
 ##### Способ 1 - Установка и сборка из официального Git репозитория:
@@ -41,34 +41,34 @@
 
 ##### *Или установить каждый отдельно, или только тот что необходим:*
 
-- Установить latte-sidebar-button:
+##### Установить latte-sidebar-button:
 `yay -S plasma5-applets-latte-sidebar-button`
 
-- Установить uswitch:
+##### Установить uswitch:
 `yay -S plasma5-applets-uswitch`
 
-- Установить latte-spacer:
+##### Установить latte-spacer:
 `yay -S plasma5-applets-latte-spacer`
 
-- Установить latte-separator:
+##### Установить latte-separator:
 `yay -S plasma5-applets-latte-separator`
 
-- Установить kde-arch-update-notifier:
+##### Установить kde-arch-update-notifier:
 `yay -S plasma5-applets-kde-arch-update-notifier`
 
-- Установить window-title:
+##### Установить window-title:
 `yay -S plasma5-applets-window-title`
 
-- Установить docker:
+##### Установить docker:
 `yay -S plasma5-applets-docker`
 
-- Установить window-appmenu:
+##### Установить window-appmenu:
 `yay -S plasma5-applets-window-appmenu`
 
-- Установить panon:
+##### Установить panon:
 `yay -S plasma5-applets-panon`
 
-- Установить window-control:
+##### Установить window-control:
 `yay -S plasma5-applets-active-window-control`
 
 -----------------------------------------------------------------------------------------------------------
@@ -78,9 +78,9 @@
 
 *Переход на **zsh** и использование **ohmyzsh** + установка специальной темы **powerlevel10k** *
 
-ArchWiki: [zsh](https://wiki.archlinux.org/title/Zsh_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9))
-OhMyZsh: [ohmyzsh](https://ohmyz.sh/)
-powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+###### ArchWiki: [zsh](https://wiki.archlinux.org/title/Zsh_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9))
+###### OhMyZsh: [ohmyzsh](https://ohmyz.sh/)
+###### powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 ##### Установка **zsh**
 `sudo pacman -Syu zsh`
@@ -116,11 +116,11 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 ### [**Papirus git**](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
 
 #### Установка набора иконок:
-*Клонируем репозиторий с иконками*
+###### *Клонируем репозиторий с иконками*
 - `git clone https://github.com/PapirusDevelopmentTeam/papirus-icon-theme.git`
-*переходим в папку с иконками*
+###### *переходим в папку с иконками*
 - `cd papirus-icon-theme`
-*устанавливаем иконки*
+###### *устанавливаем иконки*
 - `./install.sh` or `sh install.sh`
 
 #### 2 способ установки:
@@ -129,16 +129,16 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 #### 3 способ установки:
 *Используйте сценарии для установки последней версии непосредственно из этого репозитория (независимо от вашего дистрибутива)*
 
-- Корневой каталог (рекомендуется)
+###### Корневой каталог (рекомендуется)
 `wget -qO- https://git.io/papirus-icon-theme-install | sh`
 
-- Домашний каталог для GTK
+###### Домашний каталог для GTK
 `wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.icons" sh`
 
-- Домашний каталог для KDE
+###### Домашний каталог для KDE
 `wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.local/share/icons" sh`
 
-- Удаление
+###### Удаление
 `wget -qO- https://git.io/papirus-icon-theme-uninstall | sh`
 
 ----------------------------------------------------------------------------------------------------------
@@ -148,13 +148,13 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 ### [**Flatery git**](https://github.com/cbrnix/Flatery)
 
 #### Установка набора иконок
-*Клонируем репозиторий с иконками*
+###### *Клонируем репозиторий с иконками*
 - `git clone https://github.com/cbrnix/Flatery.git`
-*переходим в папку с иконками*
+###### *переходим в папку с иконками*
 - `cd Flatery`
-*примечание! у этого набора есть опции, чтобы посмотреть их нужно вызвать справку по устаноке, командой:*
+###### *примечание! у этого набора есть опции, чтобы посмотреть их нужно вызвать справку по устаноке, командой:*
 - `./install.sh -h` or `sh install.sh -h`
-*устанавливаем иконки*
+###### *устанавливаем иконки*
 - `./install.sh` or `sh install.sh`
 
 
@@ -167,15 +167,15 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 ### [**Qogir git**](https://github.com/vinceliuice/Qogir-icon-theme)
 
 #### Установка набора иконок
-*Клонируем репозиторий с иконками*
+###### *Клонируем репозиторий с иконками*
 - `git clone https://github.com/vinceliuice/Qogir-icon-theme`
-*переходим в папку с иконками*
+###### *переходим в папку с иконками*
 - `cd Qogir-icon-theme`
-*примечание! у этого набора есть опции, чтобы посмотреть их нужно вызвать справку по устаноке, командой:*
+###### *примечание! у этого набора есть опции, чтобы посмотреть их нужно вызвать справку по устаноке, командой:*
 - `./install.sh -h` or `sh install.sh -h`
-*устанавливаем иконки*
+###### *устанавливаем иконки*
 - использование: `./install.sh [OPTIONS...]`
-**OPTIONS:**
+##### **OPTIONS:**
 
 |Опция|Описание опции|
 | :----------- | -----------: |
@@ -192,13 +192,13 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 ### [**Tela-icon**](https://github.com/vinceliuice/Tela-icon-theme)
 
 #### Установка набора иконок
-*Клонируем репозиторий с иконками*
+###### *Клонируем репозиторий с иконками*
 - `git clone https://github.com/vinceliuice/Tela-icon-theme.git`
-*переходим в папку с иконками*
+###### *переходим в папку с иконками*
 - `cd Tela-icon-theme`
-*примечание! у этого набора есть опции, чтобы посмотреть их нужно вызвать справку по устаноке, командой:*
+###### *примечание! у этого набора есть опции, чтобы посмотреть их нужно вызвать справку по устаноке, командой:*
 - `./install.sh -h` or `sh install.sh -h`
-*устанавливаем иконки*
+###### *устанавливаем иконки*
 - `./install.sh -a` or `sh install.sh -a` -all color version
 
 
@@ -208,13 +208,13 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 ### [**Tela-circle**](https://github.com/vinceliuice/Tela-circle-icon-theme)
 
 #### Установка набора иконок
-*Клонируем репозиторий с иконками*
+###### *Клонируем репозиторий с иконками*
 - `git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git`
-*переходим в папку с иконками*
+###### *переходим в папку с иконками*
 - `cd Tela-circle-icon-theme`
-*примечание! у этого набора есть опции, чтобы посмотреть их нужно вызвать справку по устаноке, командой:*
+###### *примечание! у этого набора есть опции, чтобы посмотреть их нужно вызвать справку по устаноке, командой:*
 - `./install.sh -h` or `sh install.sh -h`
-*устанавливаем иконки*
+###### *устанавливаем иконки*
 - `./install.sh -a` or `sh install.sh -a` -all color version
 
 
@@ -224,13 +224,13 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 ### [**Colloid icons**](https://github.com/vinceliuice/Colloid-icon-theme)
 
 #### Установка набора иконок
-*Клонируем репозиторий с иконками*
+###### *Клонируем репозиторий с иконками*
 - `git clone https://github.com/vinceliuice/Colloid-icon-theme.git`
-*переходим в папку с иконками*
+###### *переходим в папку с иконками*
 - `cd Colloid-icon-theme`
-*примечание! у этого набора есть опции, чтобы посмотреть их нужно вызвать справку по устаноке, командой:*
+###### *примечание! у этого набора есть опции, чтобы посмотреть их нужно вызвать справку по устаноке, командой:*
 - `./install.sh -h` or `sh install.sh -h`
-*устанавливаем иконки*
+###### *устанавливаем иконки*
 - `./install.sh -t all` or `sh install.sh -t all` -all color version
 
 
@@ -242,6 +242,7 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 ### Kvantum
 - Страница проекта на [Gitgub](https://github.com/tsujan/Kvantum/tree/master/Kvantum)
+<br>
 - Больше информации можно найти на странице в [git](https://github.com/tsujan/Kvantum/blob/master/Kvantum/INSTALL.md#arch-based-distributions)
 
 #### Установка в Arch-based дистрибутивах:
@@ -292,6 +293,8 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 *Примечание! Если не получается установить, то пробуем с командой `sudo`*
 
 
+---
+
 
 ## Canta
 ![Canta dark](https://raw.githubusercontent.com/vinceliuice/Canta-kde/master/canta-dark.png)
@@ -312,6 +315,8 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 `./install.sh` or `sh install.sh`
 
+
+---
 
 
 ## Cherry
@@ -337,6 +342,8 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 `./uninstall.sh` or `sh uninstall.sh`
 
 
+---
+
 
 ## Colloid
 ![Colloid dark](https://github.com/vinceliuice/Colloid-kde/blob/main/Screenshot_dark.png)
@@ -359,6 +366,8 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 `./install.sh` or `sh install.sh`
 
+
+---
 
 
 ## Lace
@@ -390,6 +399,8 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 `./install.sh` or `sh install.sh` - если надо, то запустите скрипт с помощью *sudo*
 
 
+---
+
 
 ## Nephrite
 ![Nephrite](https://github.com/vinceliuice/Nephrite-kde/blob/main/Screenshot_light.png)
@@ -420,6 +431,8 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 `./install.sh` or `sh install.sh` - если надо, то запустите скрипт с помощью *sudo*
 
 
+---
+
 
 ## Orchis
 ![Orchis](https://github.com/vinceliuice/Orchis-kde/blob/main/plasma/look-and-feel/com.github.vinceliuice.Orchis/contents/previews/fullscreenpreview.jpg)
@@ -449,6 +462,8 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 `./install.sh` or `sh install.sh` - если надо, то запустите скрипт с помощью *sudo*
 
+
+---
 
 
 ## Qogir
@@ -485,6 +500,8 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 `./install.sh` or `sh install.sh` - если надо, то запустите скрипт с помощью *sudo*
 
+
+---
 
 
 ## Otto
