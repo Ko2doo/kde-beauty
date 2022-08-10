@@ -97,9 +97,8 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 ## Если возможностей ohmyzsh показалось мало, то ставим тему powerlevel10k
 
 *Установка*
-`yay -S --noconfirm zsh-theme-powerlevel10k-git`
----
-`echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc`
+- `yay -S --noconfirm zsh-theme-powerlevel10k-git`
+- `echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc`
 
 *Далее для детальной настройки и конфигурации можно посетить [страницу проекта](https://github.com/romkatv/powerlevel10k#configuration)*
 
@@ -110,7 +109,7 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 # Papirus
 ![papirus icon collection](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/preview.png)
-[**Papirus**](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
+### [**Papirus**](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
 
 ## Установка набора иконок:
 *Клонируем репозиторий с иконками*
