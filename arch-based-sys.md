@@ -9,7 +9,7 @@
 
 ### Установка latte dock:
 
-*[Официальный репозиторий:]*(https://github.com/KDE/latte-dock)
+[Официальный репозиторий](https://github.com/KDE/latte-dock)
 
 *Прежде чем устанавливать первым способом, вам необходимо поставить необходимые зависимости:*
 - first step: `sudo pacman -Syu`
@@ -85,6 +85,7 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 - Установка **OhMyZSH**:
 
 |Метод|Комманда|
+| ----------- | ----------- |
 |curl|`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`|
 |wget|`sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`|
 |fetch|`sh -c "$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`|
