@@ -241,9 +241,9 @@
 *Прежде чем устанавливать темы оформления, необходимо установить **Kvantum** движок тем*
 
 ### Kvantum
-- Страница проекта на [Gitgub](https://github.com/tsujan/Kvantum/tree/master/Kvantum)
-<br>
-- Больше информации можно найти на странице в [git](https://github.com/tsujan/Kvantum/blob/master/Kvantum/INSTALL.md#arch-based-distributions)
+
+#### Страница проекта на [Gitgub](https://github.com/tsujan/Kvantum/tree/master/Kvantum)
+#### Больше информации можно найти на [странице в git](https://github.com/tsujan/Kvantum/blob/master/Kvantum/INSTALL.md#arch-based-distributions)
 
 #### Установка в Arch-based дистрибутивах:
 |`sudo pacman -S kvantum-qt5`|
