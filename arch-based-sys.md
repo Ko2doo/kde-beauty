@@ -12,18 +12,21 @@
 [Официальный репозиторий](https://github.com/KDE/latte-dock)
 
 *Прежде чем устанавливать первым способом, вам необходимо поставить необходимые зависимости:*
-- first step: `sudo pacman -Syu`
-- next step: `sudo pacman -S cmake extra-cmake-modules python plasma-framework plasma-desktop plasma-wayland-protocols`
+- first step:
+`sudo pacman -Syu`
+- next step:
+`sudo pacman -S cmake extra-cmake-modules python plasma-framework plasma-desktop plasma-wayland-protocols`
 
-- Способ 1 - Установка и сборка из официального Git репозитория:
+##### Способ 1 - Установка и сборка из официального Git репозитория:
+
 - first step: `git clone https://github.com/KDE/latte-dock`
 - next step: `cd latte-dock/`
 - next step: `sh install.sh`
 
-- Способ 2 - Установка с помощью **pacman**:
+##### Способ 2 - Установка с помощью **pacman**:
 `sudo pacman -S latte-dock`
 
-- Способ 3 - Установка с помощью **yay**:
+##### Способ 3 - Установка с помощью **yay**:
 `yay -Sy latte-dock` or `yay latte-dock`
 
 -----------------------------------------------------------------------------------------------------------
@@ -32,11 +35,11 @@
 
 *Можно установить с помощью графического установщика или через терминал с помощью **yay***
 
-- *Вывести список доступных плазмидов на экран:*
+##### *Вывести список доступных плазмидов на экран:*
 `yay plasma5-applets`
 
 
-- *Или установить каждый отдельно, или только тот что необходим:*
+##### *Или установить каждый отдельно, или только тот что необходим:*
 
 - Установить latte-sidebar-button:
 `yay -S plasma5-applets-latte-sidebar-button`
@@ -79,10 +82,10 @@ ArchWiki: [zsh](https://wiki.archlinux.org/title/Zsh_(%D0%A0%D1%83%D1%81%D1%81%D
 OhMyZsh: [ohmyzsh](https://ohmyz.sh/)
 powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
-- Установка **zsh**
+##### Установка **zsh**
 `sudo pacman -Syu zsh`
 
-- Установка **OhMyZSH**:
+##### Установка **OhMyZSH**:
 
 |Метод|Комманда|
 | ----------- | ----------- |
@@ -98,6 +101,7 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 *Установка*
 - `yay -S --noconfirm zsh-theme-powerlevel10k-git`
+
 - `echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc`
 
 *Далее для детальной настройки и конфигурации можно посетить [страницу проекта](https://github.com/romkatv/powerlevel10k#configuration)*
@@ -109,9 +113,9 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 # Papirus
 ![papirus icon collection](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/preview.png)
-### [**Papirus**](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
+### [**Papirus git**](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/)
 
-## Установка набора иконок:
+#### Установка набора иконок:
 *Клонируем репозиторий с иконками*
 - `git clone https://github.com/PapirusDevelopmentTeam/papirus-icon-theme.git`
 *переходим в папку с иконками*
@@ -119,10 +123,10 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 *устанавливаем иконки*
 - `./install.sh` or `sh install.sh`
 
-### 2 способ установки:
+#### 2 способ установки:
 `sudo pacman -S papirus-icon-theme` community
 
-### 3 способ установки:
+#### 3 способ установки:
 *Используйте сценарии для установки последней версии непосредственно из этого репозитория (независимо от вашего дистрибутива)*
 
 - Корневой каталог (рекомендуется)
@@ -141,9 +145,9 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 # Flatery
 ![Flatery icons](https://raw.githubusercontent.com/cbrnix/Flatery/master/cover.png)
-**[Flatery]**(https://github.com/cbrnix/Flatery)
+### [**Flatery git**](https://github.com/cbrnix/Flatery)
 
-## Установка набора иконок
+#### Установка набора иконок
 *Клонируем репозиторий с иконками*
 - `git clone https://github.com/cbrnix/Flatery.git`
 *переходим в папку с иконками*
@@ -160,9 +164,9 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 ![Qogir icon theme black](https://raw.githubusercontent.com/vinceliuice/Qogir-icon-theme/master/preview_01.png)
 ### white
 ![Qogir icon theme white](https://raw.githubusercontent.com/vinceliuice/Qogir-icon-theme/master/preview_02.png)
-**[Qogir]**(https://github.com/vinceliuice/Qogir-icon-theme)
+### [**Qogir git**](https://github.com/vinceliuice/Qogir-icon-theme)
 
-## Установка набора иконок
+#### Установка набора иконок
 *Клонируем репозиторий с иконками*
 - `git clone https://github.com/vinceliuice/Qogir-icon-theme`
 *переходим в папку с иконками*
@@ -172,19 +176,22 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 *устанавливаем иконки*
 - использование: `./install.sh [OPTIONS...]`
 **OPTIONS:**
-  |-d, --dest DIR|Specify theme destination directory (Default: /home/romildo/.local/share/icons)|
-  |-n, --name NAME|Specify theme name (Default: Qogir)|
-  |-t, --theme VARIANT|Specify theme primary color variant(s) [default|manjaro|ubuntu|all] (Default: all themes)|
-  |-c, --color VARIANT|Specify theme color variant(s) [standard|dark|all] (Default: all variants)|
-  |-h, --help|Show this help|
+
+|Опция|Описание опции|
+| :----------- | -----------: |
+|-d, --dest DIR|Specify theme destination directory (Default: /home/romildo/.local/share/icons)|
+|-n, --name NAME|Specify theme name (Default: Qogir)|
+|-t, --theme VARIANT|Specify theme primary color variant(s) [default|manjaro|ubuntu|all] (Default: all themes)|
+|-c, --color VARIANT|Specify theme color variant(s) [standard|dark|all] (Default: all variants)|
+|-h, --help|Show this help|
 
 
 
 # Tela-icon
 ![Tela-icon](https://images.pling.com/img/00/00/32/24/44/1279924/6b664cbc418fd3837179d322d63db97c8b84.png)
-**[Tela-icon]**(https://github.com/vinceliuice/Tela-icon-theme)
+### [**Tela-icon**](https://github.com/vinceliuice/Tela-icon-theme)
 
-## Установка набора иконок
+#### Установка набора иконок
 *Клонируем репозиторий с иконками*
 - `git clone https://github.com/vinceliuice/Tela-icon-theme.git`
 *переходим в папку с иконками*
@@ -198,9 +205,9 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 # Tela-circle
 ![Tela-circle](https://github.com/vinceliuice/Tela-circle-icon-theme/blob/master/preview.png)
-**[Tela-circle]**(https://github.com/vinceliuice/Tela-circle-icon-theme)
+### [**Tela-circle**](https://github.com/vinceliuice/Tela-circle-icon-theme)
 
-## Установка набора иконок
+#### Установка набора иконок
 *Клонируем репозиторий с иконками*
 - `git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git`
 *переходим в папку с иконками*
@@ -214,9 +221,9 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
 # Colloid icons
 ![Colloid icons](https://raw.githubusercontent.com/vinceliuice/Colloid-icon-theme/main/preview.png)
-**[Colloid icons]**(https://github.com/vinceliuice/Colloid-icon-theme)
+### [**Colloid icons**](https://github.com/vinceliuice/Colloid-icon-theme)
 
-## Установка набора иконок
+#### Установка набора иконок
 *Клонируем репозиторий с иконками*
 - `git clone https://github.com/vinceliuice/Colloid-icon-theme.git`
 *переходим в папку с иконками*
@@ -234,16 +241,17 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 *Прежде чем устанавливать темы оформления, необходимо установить **Kvantum** движок тем*
 
 ### Kvantum
+- Страница проекта на [Gitgub](https://github.com/tsujan/Kvantum/tree/master/Kvantum)
+- Больше информации можно найти на странице в [git](https://github.com/tsujan/Kvantum/blob/master/Kvantum/INSTALL.md#arch-based-distributions)
 
-Страница проекта на [Gitgub](https://github.com/tsujan/Kvantum/tree/master/Kvantum)
-Больше информации можно найти на странице в [git](https://github.com/tsujan/Kvantum/blob/master/Kvantum/INSTALL.md#arch-based-distributions)
-
-- Установка в Arch-based дистрибутивах:
-`sudo pacman -S kvantum-qt5`
------- или ------
-`yay -S kvantum-qt5-git`
+#### Установка в Arch-based дистрибутивах:
+|`sudo pacman -S kvantum-qt5`|
+| :----: |
+|------ или ------|
+|`yay -S kvantum-qt5-git`|
 
 *Примечение! так же, Kvantum можно собрать из исходников*
+
 Больше инструкций по сборке из исходников можете найти [здесь](https://github.com/tsujan/Kvantum/blob/master/Kvantum/INSTALL.md#installation)
 
 
@@ -255,19 +263,28 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
   <img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/arc-kde/master/preview.png" alt="Preview Arc-Dark KDE"/>
   <sup><sub>Screenshot Details: Engine: <a href="https://github.com/tsujan/Kvantum/tree/master/Kvantum">Kavntum</a> | Kvantum Theme: Arc Dark | Aurorae decoration: Arc Dark | Plasma Theme: Arc Dark | Icons: <a href="https://github.com/PapirusDevelopmentTeam/papirus-icon-theme">Papirus</a></sub></sup>
 </p>
-[Arc-kde](https://github.com/PapirusDevelopmentTeam/arc-kde)
+### [**Arc-kde git**](https://github.com/PapirusDevelopmentTeam/arc-kde)
 
-- Установка:
+#### Установка:
+
 `wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/arc-kde/master/install.sh | sh`
-- Удаление:
+
+#### Удаление:
+
 `wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/arc-kde/master/install.sh | env uninstall=true sh`
 
 -- Второй способ установки --
+
 *Клонируем репозиторий:*
+
 `git clone https://github.com/PapirusDevelopmentTeam/arc-kde.git`
+
 *Переходим в папку с темой:*
+
 `cd arc-kde`
+
 *Устанавливаем тему:*
+
 `./install.sh` or `sh install.sh`
 
 - Лучше всего использовать эту тему с иконками [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
@@ -279,30 +296,44 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 ## Canta
 ![Canta dark](https://raw.githubusercontent.com/vinceliuice/Canta-kde/master/canta-dark.png)
 ![Canta light](https://raw.githubusercontent.com/vinceliuice/Canta-kde/master/canta-light.png)
-[Canta](https://github.com/vinceliuice/Canta-kde)
+### [**Canta git**](https://github.com/vinceliuice/Canta-kde)
 
-### Установка:
+#### Установка:
+
 *Клонируем репозиторий:*
+
 `git clone https://github.com/vinceliuice/Canta-kde.git`
+
 *Переходим в папку с темой:*
+
 `cd Canta-kde`
+
 *Устанавливаем тему:*
+
 `./install.sh` or `sh install.sh`
 
 
 
 ## Cherry
 ![Cherry](https://raw.githubusercontent.com/nullxception/cherry-kde-theme/main/preview-full.png)
-[Cherry](https://github.com/nullxception/cherry-kde-theme)
+### [**Cherry git**](https://github.com/nullxception/cherry-kde-theme)
 
-### Установка
+#### Установка
+
 *Клонируем репозиторий:*
+
 `git clone https://github.com/nullxception/cherry-kde-theme.git`
+
 *Переходим в папку с темой:*
+
 `cd cherry-kde-theme`
+
 *Устанавливаем тему:*
+
 `./install.sh` or `sh install.sh`
+
 *Удаляем тему:*
+
 `./uninstall.sh` or `sh uninstall.sh`
 
 
@@ -310,111 +341,168 @@ powerlevel10k: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 ## Colloid
 ![Colloid dark](https://github.com/vinceliuice/Colloid-kde/blob/main/Screenshot_dark.png)
 ![Colloid light](https://github.com/vinceliuice/Colloid-kde/blob/main/Screenshot_light.png)
-[Colloid kde](https://github.com/vinceliuice/Colloid-kde)
+### [**Colloid kde git**](https://github.com/vinceliuice/Colloid-kde)
+
 *Примечание отлично сочитается с иконками [Colloid](https://github.com/vinceliuice/Colloid-icon-theme)*
 
-### Установка
+#### Установка
+
 *Клонируем репозиторий:*
+
 `git clone https://github.com/vinceliuice/Colloid-kde.git`
+
 *Переходим в папку с темой:*
+
 `cd Colloid-kde`
+
 *Устанавливаем тему:*
+
 `./install.sh` or `sh install.sh`
 
 
 
 ## Lace
 ![Lace](https://raw.githubusercontent.com/yeyushengfan258/Lace-kde/main/View-1.png)
-[Lace kde](https://github.com/yeyushengfan258/Lace-kde)
+### [**Lace kde git**](https://github.com/yeyushengfan258/Lace-kde)
 
-### Установка
+#### Установка
+
 *Клонируем репозиторий:*
+
 `git clone https://github.com/yeyushengfan258/Lace-kde.git`
+
 *Переходим в папку с темой:*
+
 `cd Lace-kde`
+
 *Устанавливаем тему:*
+
 `./install.sh` or `sh install.sh`
 
 В проекте есть тема для sddm, но устанавливать её нужно отдельно:
+
 *находясь в папке **Lace-kde** перейдите в папку sddm командой:*
+
 `cd sddm/`
+
 *Установите тему для экрана загрузки, командой:*
+
 `./install.sh` or `sh install.sh` - если надо, то запустите скрипт с помощью *sudo*
 
 
 
 ## Nephrite
 ![Nephrite](https://github.com/vinceliuice/Nephrite-kde/blob/main/Screenshot_light.png)
-[Nephrite](https://github.com/vinceliuice/Nephrite-kde)
+### [**Nephrite git**](https://github.com/vinceliuice/Nephrite-kde)
 
-### Установка
+#### Установка
+
 *Клонируем репозиторий:*
+
 `git clone https://github.com/vinceliuice/Nephrite-kde.git`
+
 *Переходим в папку с темой:*
+
 `cd Nephrite-kde`
+
 *Устанавливаем тему:*
+
 `./install.sh` or `sh install.sh`
 
 В проекте есть тема для sddm, но устанавливать её нужно отдельно:
+
 *находясь в папке **Nephrite-kde** перейдите в папку sddm командой:*
+
 `cd sddm/`
+
 *Установите тему для экрана загрузки, командой:*
+
 `./install.sh` or `sh install.sh` - если надо, то запустите скрипт с помощью *sudo*
 
 
 
 ## Orchis
 ![Orchis](https://github.com/vinceliuice/Orchis-kde/blob/main/plasma/look-and-feel/com.github.vinceliuice.Orchis/contents/previews/fullscreenpreview.jpg)
-[Orchis](https://github.com/vinceliuice/Orchis-kde)
+### [**Orchis git**](https://github.com/vinceliuice/Orchis-kde)
 
-### Установка
+#### Установка
+
 *Клонируем репозиторий:*
+
 `git clone https://github.com/vinceliuice/Orchis-kde.git`
+
 *Переходим в папку с темой:*
+
 `cd Orchis-kde`
+
 *Устанавливаем тему:*
+
 `./install.sh` or `sh install.sh`
 
 В проекте есть тема для sddm, но устанавливать её нужно отдельно:
+
 *находясь в папке **Orchis-kde** перейдите в папку sddm командой:*
+
 `cd sddm/`
+
 *Установите тему для экрана загрузки, командой:*
+
 `./install.sh` or `sh install.sh` - если надо, то запустите скрипт с помощью *sudo*
 
 
 
 ## Qogir
 ![Qogir](https://raw.githubusercontent.com/vinceliuice/Qogir-kde/master/images/preview1.png)
-[Qogir](https://github.com/vinceliuice/Qogir-kde)
+### [**Qogir git**](https://github.com/vinceliuice/Qogir-kde)
+
 *Примечание! идеально гармонирует с набором иконок [qogir](https://github.com/vinceliuice/Qogir-icon-theme)*
 
-### Установка
+#### Установка
+
 *Клонируем репозиторий:*
+
 `git clone https://github.com/vinceliuice/Qogir-kde.git`
+
 *Переходим в папку с темой:*
+
 `cd Qogir-kde`
+
 *Устанавливаем тему:*
+
 `./install.sh` or `sh install.sh`
+
 *Удаляем тему:*
+
 `./uninstall.sh` or `sh uninstall.sh`
 
 В проекте есть тема для sddm, но устанавливать её нужно отдельно:
+
 *находясь в папке **Qogir-kde** перейдите в папку sddm командой:*
+
 `cd sddm/`
+
 *Установите тему для экрана загрузки, командой:*
+
 `./install.sh` or `sh install.sh` - если надо, то запустите скрипт с помощью *sudo*
 
 
 
 ## Otto
 ![Otto](https://user-content.gitlab-static.net/a6ed93e55643d26282a6bab6574b9fc6fef550ba/68747470733a2f2f692e696d6775722e636f6d2f5655374b4d41722e706e67)
-[Otto](https://gitlab.com/jomada/otto)
+### [**Otto git**](https://gitlab.com/jomada/otto)
+
 *Примечание! идеально гармонирует с набором иконок [qogir](https://github.com/vinceliuice/Qogir-icon-theme)*
 
-### Установка
+#### Установка
+
 *Клонируем репозиторий:*
+
 `git clone https://gitlab.com/jomada/otto.git`
+
 *Переходим в папку с темой:*
+
 `cd otto`
+
 *Устанавливаем тему:*
+
 `./install.sh` or `sh install.sh`
