@@ -1,6 +1,7 @@
 # Библиотека с инструкциями по украшению KDE.
 
-- Сборник полезностей для [Arch-based дистрибутивов](https://github.com/Ko2doo/kde-beauty/blob/arch-based/arch-based-sys.md).
+- Сборник полезностей для [Arch-based дистрибутивов](https://github.com/Ko2doo/kde-beauty/blob/arch-based/assets/arch-based-sys.md).
+- Справка по [коммандам pacman](https://github.com/Ko2doo/kde-beauty/blob/arch-based/pacman/pacman-commands.md)
 
 ---
 
